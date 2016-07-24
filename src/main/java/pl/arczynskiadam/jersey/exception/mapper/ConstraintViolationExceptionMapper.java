@@ -14,7 +14,10 @@ public class ConstraintViolationExceptionMapper implements ExceptionMapper<Const
     public Response toResponse(ConstraintViolationException ex) {
         return Response
                 .status(Response.Status.BAD_REQUEST)
-                .entity(new ErrorDTO(ex.getConstraintViolations().stream().findFirst().get().getMessage(), "400"))
+                .entity(new ErrorDTO(
+                        ex.getConstraintViolations().stream().findFirst().get().getMessage(),
+                        Integer.toString(Response.Status.BAD_REQUEST.getStatusCode()))
+                )
                 .build();
     }
 }
