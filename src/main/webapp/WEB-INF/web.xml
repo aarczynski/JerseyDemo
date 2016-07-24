@@ -11,8 +11,17 @@
 			<param-name>jersey.config.server.provider.packages</param-name>
 			<param-value>
 				pl.arczynskiadam.jersey.rest,
-				pl.arczynskiadam.jersey.exception.mapper
+				pl.arczynskiadam.jersey.exception.mapper,
+				pl.arczynskiadam.jersey.security
 			</param-value>
+		</init-param>
+		<init-param>
+			<param-name>jersey.config.server.provider.classnames</param-name>
+			<param-value>org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.spi.container.ResourceFilters</param-name>
+			<param-value>com.sun.jersey.api.container.filter.RolesAllowedResourceFilterFactory</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

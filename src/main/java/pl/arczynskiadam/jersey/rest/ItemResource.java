@@ -3,6 +3,7 @@ package pl.arczynskiadam.jersey.rest;
 import pl.arczynskiadam.jersey.dto.ItemDTO;
 import pl.arczynskiadam.jersey.exception.MyIllegalArgumentException;
 
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,6 +16,7 @@ import javax.ws.rs.core.Response;
 public class ItemResource {
 
 	@GET
+	@RolesAllowed("admin")
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getItem(@Valid @QueryParam("p") Param p) throws MyIllegalArgumentException {
