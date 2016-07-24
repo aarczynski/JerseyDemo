@@ -1,7 +1,7 @@
 package pl.arczynskiadam.jersey.security;
 
 import pl.arczynskiadam.jersey.dao.FakeUserDao;
-import pl.arczynskiadam.jersey.exception.UnauthororisedException;
+import pl.arczynskiadam.jersey.exception.UnauthorisedException;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.container.ContainerRequestContext;
@@ -26,7 +26,7 @@ public class AuthFilter implements ContainerRequestFilter {
 
         String auth = request.getHeaderString("authorization");
         if(auth == null){
-            throw new UnauthororisedException("Missing credentials");
+            throw new UnauthorisedException("Missing credentials");
         }
 
         String[] loginAndPassword = BasicAuth.decode(auth);
@@ -36,7 +36,7 @@ public class AuthFilter implements ContainerRequestFilter {
 
         User currentUser = FakeUserDao.findUserByName(loginAndPassword[0]);
         if(currentUser == null){
-            throw new UnauthororisedException("Invalid credentials");
+            throw new UnauthorisedException("Invalid credentials");
         }
 
         String scheme = request.getUriInfo().getRequestUri().getScheme();

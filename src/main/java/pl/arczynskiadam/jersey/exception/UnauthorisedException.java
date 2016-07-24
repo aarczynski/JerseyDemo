@@ -8,8 +8,8 @@ import javax.ws.rs.core.Response;
 
 import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
 
-public class UnauthororisedException extends WebApplicationException {
-    public UnauthororisedException(String msg) {
+public class UnauthorisedException extends WebApplicationException {
+    public UnauthorisedException(String msg) {
         super(Response
                 .status(UNAUTHORIZED)
                 .entity(new ErrorDTO(msg, Integer.toString(UNAUTHORIZED.getStatusCode()))).type(MediaType.APPLICATION_JSON)
