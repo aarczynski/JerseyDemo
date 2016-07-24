@@ -12,12 +12,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/")
-public class JSONService {
+public class ItemResource {
 
 	@GET
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getTrackInJSON2(@Valid @QueryParam("p") Param p) throws MyIllegalArgumentException {
+	public Response getItem(@Valid @QueryParam("p") Param p) throws MyIllegalArgumentException {
 
 		if (p == null) {
 			throw new MyIllegalArgumentException("p param is mandatory");
