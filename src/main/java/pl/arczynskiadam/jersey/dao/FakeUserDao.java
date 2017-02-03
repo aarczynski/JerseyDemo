@@ -13,6 +13,10 @@ public class FakeUserDao {
             user = new User();
             List<String> roles = Lists.newArrayList("admin");
             user.setRoles(roles);
+        } else if ("user".equals(name)) {
+            user = new User();
+            List<String> roles = Lists.newArrayList("user");
+            user.setRoles(roles);
         }
         return user;
     }
