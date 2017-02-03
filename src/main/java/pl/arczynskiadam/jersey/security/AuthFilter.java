@@ -25,7 +25,7 @@ public class AuthFilter implements ContainerRequestFilter {
         }
 
         String auth = request.getHeaderString("authorization");
-        if(auth == null){
+        if(auth == null) {
             throw new UnauthorisedException("Missing credentials");
         }
 
@@ -35,7 +35,7 @@ public class AuthFilter implements ContainerRequestFilter {
         }
 
         User currentUser = FakeUserDao.findUserByName(loginAndPassword[0]);
-        if(currentUser == null){
+        if(currentUser == null) {
             throw new UnauthorisedException("Invalid credentials");
         }
 
