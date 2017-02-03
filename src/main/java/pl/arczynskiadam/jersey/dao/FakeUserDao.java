@@ -8,8 +8,9 @@ import java.util.List;
 public class FakeUserDao {
 
     public static User findUserByName(String name) {
-        User user = new User();
+        User user = null;
         if ("admin".equals(name)) {
+            user = new User();
             List<String> roles = Lists.newArrayList("admin");
             user.setRoles(roles);
         }
