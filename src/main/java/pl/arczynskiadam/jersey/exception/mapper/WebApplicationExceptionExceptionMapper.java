@@ -16,7 +16,7 @@ public class WebApplicationExceptionExceptionMapper implements ExceptionMapper<F
     public Response toResponse(ForbiddenException  ex) {
         return Response
                 .status(Response.Status.BAD_REQUEST)
-                .entity(new ErrorDTO("Forbidden", Integer.toString(FORBIDDEN.getStatusCode())))
+                .entity(new ErrorDTO(FORBIDDEN.getReasonPhrase(), Integer.toString(FORBIDDEN.getStatusCode())))
                 .build();
     }
 }

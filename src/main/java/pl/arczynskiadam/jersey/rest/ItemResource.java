@@ -12,6 +12,8 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import static javax.ws.rs.core.Response.Status.OK;
+
 @Path("/")
 public class ItemResource {
 
@@ -28,6 +30,6 @@ public class ItemResource {
 		ItemDTO item = new ItemDTO();
 		item.setValue(p.getVal());
 
-		return Response.status(200).entity(item).build();
+		return Response.status(OK.getStatusCode()).entity(item).build();
 	}
 }
