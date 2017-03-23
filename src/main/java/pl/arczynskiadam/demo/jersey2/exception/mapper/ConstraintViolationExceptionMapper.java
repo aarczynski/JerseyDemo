@@ -1,6 +1,6 @@
-package pl.arczynskiadam.jersey.exception.mapper;
+package pl.arczynskiadam.demo.jersey2.exception.mapper;
 
-import pl.arczynskiadam.jersey.dto.ErrorDTO;
+import pl.arczynskiadam.demo.jersey2.dto.ErrorDTO;
 
 import javax.validation.ConstraintViolationException;
 import javax.ws.rs.core.Response;

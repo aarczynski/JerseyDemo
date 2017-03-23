@@ -1,4 +1,4 @@
-package pl.arczynskiadam.jersey.dto;
+package pl.arczynskiadam.demo.jersey2.dto;
 
 public class ErrorDTO {
     private String errorMsg;

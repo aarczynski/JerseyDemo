@@ -1,7 +1,7 @@
-package pl.arczynskiadam.jersey.security;
+package pl.arczynskiadam.demo.jersey2.security;
 
-import pl.arczynskiadam.jersey.dao.FakeUserDao;
-import pl.arczynskiadam.jersey.exception.UnauthorisedException;
+import pl.arczynskiadam.demo.jersey2.dao.FakeUserDao;
+import pl.arczynskiadam.demo.jersey2.exception.UnauthorisedException;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.container.ContainerRequestContext;

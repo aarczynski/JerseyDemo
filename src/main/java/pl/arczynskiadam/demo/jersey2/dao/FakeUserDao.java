@@ -1,7 +1,7 @@
-package pl.arczynskiadam.jersey.dao;
+package pl.arczynskiadam.demo.jersey2.dao;
 
 import com.google.common.collect.Lists;
-import pl.arczynskiadam.jersey.security.User;
+import pl.arczynskiadam.demo.jersey2.security.User;
 
 import java.util.List;
 

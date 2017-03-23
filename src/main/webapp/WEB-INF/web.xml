@@ -10,9 +10,9 @@
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
 			<param-value>
-				pl.arczynskiadam.jersey.rest,
-				pl.arczynskiadam.jersey.exception.mapper,
-				pl.arczynskiadam.jersey.security
+				pl.arczynskiadam.demo.jersey2.rest,
+				pl.arczynskiadam.demo.jersey2.exception.mapper,
+				pl.arczynskiadam.demo.jersey2.security
 			</param-value>
 		</init-param>
 		<init-param>

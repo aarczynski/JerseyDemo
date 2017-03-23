@@ -1,6 +1,6 @@
-package pl.arczynskiadam.jersey.exception;
+package pl.arczynskiadam.demo.jersey2.exception;
 
-import pl.arczynskiadam.jersey.dto.ErrorDTO;
+import pl.arczynskiadam.demo.jersey2.dto.ErrorDTO;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;

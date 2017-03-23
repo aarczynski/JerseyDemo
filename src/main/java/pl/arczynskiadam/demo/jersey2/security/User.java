@@ -1,4 +1,4 @@
-package pl.arczynskiadam.jersey.security;
+package pl.arczynskiadam.demo.jersey2.security;
 
 import java.security.Principal;
 import java.util.List;

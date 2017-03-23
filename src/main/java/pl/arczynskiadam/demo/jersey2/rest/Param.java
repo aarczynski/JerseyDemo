@@ -1,4 +1,4 @@
-package pl.arczynskiadam.jersey.rest;
+package pl.arczynskiadam.demo.jersey2.rest;
 
 import javax.validation.constraints.Size;
 

@@ -1,7 +1,7 @@
-package pl.arczynskiadam.jersey.rest;
+package pl.arczynskiadam.demo.jersey2.rest;
 
-import pl.arczynskiadam.jersey.dto.ItemDTO;
-import pl.arczynskiadam.jersey.exception.MyIllegalArgumentException;
+import pl.arczynskiadam.demo.jersey2.dto.ItemDTO;
+import pl.arczynskiadam.demo.jersey2.exception.MyIllegalArgumentException;
 
 import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
